@@ -1,3 +1,8 @@
+<?php 
+   session_start();
+   unset($_SESSION["username"]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,12 +28,12 @@
                 <div class="form-outline mb-4">
                  
 
-                  <input type="text" id="typeEmailX-2" name="username" class="form-control form-control-lg" placeholder="username" />
+                  <input  type="text" id="typeEmailX-2" name="username" class="form-control form-control-lg" placeholder="username " required />
 
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="typePasswordX-2" name="pwd" class="form-control form-control-lg" placeholder="Password" />
+                  <input type="password" id="typePasswordX-2" name="pwd" class="form-control form-control-lg" placeholder="Password "required />
 
                 </div>
                 <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
