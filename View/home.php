@@ -5,7 +5,7 @@
     if(isset($_POST["username"]) && isset($_POST["pwd"])){
         $name=$_POST["username"];
         $pwd=$_POST["pwd"];
-        $_SESSION["username"]=$username;
+        $_SESSION["username"]=$name;
     }
 
     if(!isset($_SESSION["username"])){
@@ -13,7 +13,7 @@
         header("Location: ./test01.php");
     }
     else{
-        $username=$_SESSION["username"];
+        $name=$_SESSION["username"];
     }
 
 ?>

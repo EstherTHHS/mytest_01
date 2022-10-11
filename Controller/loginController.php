@@ -20,7 +20,18 @@ if(isset($_POST["username"]) && isset($_POST["pwd"])){
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-        echo "<pre>";
-        print_r($result);
+        // echo "<pre>";
+        // print_r($result);
+
+        if(count($result)== 0){
+            header("Location: ../../../View/test01.php");
+        }else{
+            $_SESSION["username"]=$name;
+            header("Location: ../../../View/home.php");
+        }
+           
+        
        
 }
+
+?>
