@@ -22,7 +22,7 @@
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <div class="card shadow-2-strong" style="border-radius: 1rem;">
             <div class="card-body p-5 text-center">
-              <form action="./home.php" method="post">
+              <form action="../Controller/loginController.php" method="post">
                 <h3 class="mb-5">Sign in</h3>
 
                 <div class="form-outline mb-4">

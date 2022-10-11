@@ -3,7 +3,7 @@
     session_start();
 
     if(isset($_POST["username"]) && isset($_POST["pwd"])){
-        $username=$_POST["username"];
+        $name=$_POST["username"];
         $pwd=$_POST["pwd"];
         $_SESSION["username"]=$username;
     }
