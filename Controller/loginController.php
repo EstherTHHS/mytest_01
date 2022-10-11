@@ -12,16 +12,19 @@ if(isset($_POST["username"]) && isset($_POST["pwd"])){
 
         
      
-        $sql = $pdo->prepare(
+        $sql=$pdo->prepare(
             "SELECT * FROM admin_management 
-        WHERE admin_name='$name' AND password='$pwd' ");
+        WHERE admin_name= :adminName AND password=:pwd ");
 
+        //bind
+        $sql->bindValue(":adminName",$name);
+        $sql->bindValue(":pwd",$pwd);
      //execute
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
         // echo "<pre>";
-        // print_r($result);
+         print_r($result);
 
         if(count($result)== 0){
             header("Location: ../../../View/test01.php");
