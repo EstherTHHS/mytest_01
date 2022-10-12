@@ -1,0 +1,18 @@
+thead {
+  background-color: #8a39ab;
+  color: #e8f3f1;
+}
+
+table {
+  background-color: white;
+}
+
+tr:hover {
+  background-color: #c4fcef !important;
+  color: #8a39ab;
+}
+
+/* body {
+  color: #8a39ab;
+  background-color: #c4fcef !important;
+} */

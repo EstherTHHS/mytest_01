@@ -18,15 +18,15 @@
         <div class="col col-md-5  col-lg-6  col-sm-auto">
         <form action="../../Controller/doctor/addController.php" method="post">
             <h3 class="mb-5">Doctor Info</h3>
-
+         
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Doctor Name</label>
                 <input type="text" name="docName" class="form-control" id="exampleFormControlInput1" placeholder="Doctor Name" required>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Gender</label>
-                <input type="radio" name="gender" id="" value="0" >Male
-                <input type="radio" name="gender" id="" value="1" >Female
+                <label for="" class="form-label">Gender</label>
+                <input type="radio" name="gender"  value="0" >Male
+                <input type="radio" name="gender"  value="1" >Female
                 <!-- <input type="radio" name="gender" id="">Other -->
             </div>
             <div class="mb-3">

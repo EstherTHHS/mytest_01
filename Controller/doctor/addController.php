@@ -1,5 +1,5 @@
 <?php
-echo "OK";
+// echo "OK";
 
 include"../../Model/dbConnection.php";
 
@@ -35,17 +35,18 @@ if(isset($_POST["addDoctor"])){
     )
 ");
 
-$sql->bindValue(" :doctor_name", $name);
+$sql->bindValue(":doctor_name", $name);
 $sql->bindValue(":doctor_gender",  $gender);
-$sql->bindValue(" :doctor_sama", $sama);
+$sql->bindValue(":doctor_sama", $sama);
 $sql->bindValue(":doctor_bachelar",  $bachelar);
-$sql->bindValue(":center",  $center);
+$sql->bindValue(":center",$center);
 $sql->bindValue(":ph_num",  $phNum);
-$sql->bindValue(" :created_date", date("Y/m/d"));
+$sql->bindValue(":created_date", date("Y/m/d"));
 
 $sql->execute();
 
 // header("Location: ../../View/doctor/list.php");
+header("Location: ../../View/doctor/list.php");
 
 }
 else{
