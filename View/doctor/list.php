@@ -93,7 +93,7 @@ include "../../Controller/doctor/listController.php";
         
 
 
-            <div class="col col-md-auto col-lg-12 col-sm-6">
+            <div class="col col-md-auto col-lg-11 col-sm-6">
 
                 <table class="table table align-middle table-bordered text-center ">
                     <thead >
@@ -105,6 +105,7 @@ include "../../Controller/doctor/listController.php";
                             <th scope="col">Bachelar</th>
                             <th scope="col">Center</th>
                             <th scope="col">PhoneNo</th>
+                            <th scope="col">Duty Day</th>
                             <th scope="col">Duty Time</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -127,13 +128,9 @@ include "../../Controller/doctor/listController.php";
                                 <td><?= $doctor["doctor_bachelar"] ?></td>
                                 <td><?= $doctor["center"] ?></td>
                                 <td><?= $doctor["ph_num"] ?></td>
-                                <td>Mondy,Tuesday 9AM-11AM</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
-                                <line x1="16" y1="5" x2="19" y2="8" />
-                                </svg></td>
+                                <td>Mondy,Tuesday</td>
+                                <td>9AM-11AM</td>
+                                <td><a href="../../Controller/doctor/editController.php?id=<?php echo $doctor["doctor_id"]?>">Edit</a> </td>
 
 
                             </tr>
@@ -141,10 +138,10 @@ include "../../Controller/doctor/listController.php";
 
                     </tbody>
                 </table>
-
+                <a href="./add.php"> <input class="btn btn-primary float-lg-end float-sm-end float-md-end" type="submit" value="ADD Doctor"></a>
                
             </div>
-            <a href="./add.php"> <input class="btn btn-primary float-lg-end float-sm-end float-md-end" type="submit" value="ADD Doctor"></a>
+            
 
         </div>
     </div>

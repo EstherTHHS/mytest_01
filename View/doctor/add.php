@@ -45,6 +45,20 @@
                 <label for="exampleFormControlInput1" class="form-label">Phone No.</label>
                 <input type="text" name="phNum" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
             </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Duty Date</label>
+                <input type="text" name="phNum" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Start Time</label>
+                <input type="text" name="phNum" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">End Time</label>
+                <input type="text" name="phNum" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
+            </div>
+
+
 
             <div class="mb-3">
             <button type="button submit" name="addDoctor" class="btn btn-secondary float-lg-end float-sm-end float-md-end">ADD</button>
