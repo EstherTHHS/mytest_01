@@ -41,7 +41,14 @@ $("#searchBtn").click(function () {
                 <td>${doctor.doctor_bachelar}</td>
                 <td>${doctor.center}</td>
                 <td>${doctor.ph_num}</td>
-                
+                <td>${doctor.day}</td>
+                <td>${doctor.start_time}-${doctor.start_time}</td>
+                <td><a href="../../Controller/doctor/editController.php?id=${
+                  doctor.doctor_id
+                }">Edit</a> </td>
+                <td><a href="../../Controller/doctor/deleteController.php?id=${
+                  doctor.doctor_id
+                }">delete</a></td>
                
             </tr>
             `
