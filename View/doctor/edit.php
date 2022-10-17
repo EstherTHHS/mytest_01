@@ -49,12 +49,10 @@ $docInfo = $_SESSION["docInfo"];
 
                     <div>
 
-                        <input type="radio" name="gender" value="0" 
-                        <?php if ($docInfo[0]['doctor_gender'] == 0) {
+                        <input type="radio" name="gender" value="0" <?php if ($docInfo[0]['doctor_gender'] == 0) {
                                                                         echo "checked";
                                                                     } ?>>Male
-                        <input type="radio" name="gender" value="1" 
-                        <?php if ($docInfo[0]['doctor_gender'] == 1) {
+                        <input type="radio" name="gender" value="1" <?php if ($docInfo[0]['doctor_gender'] == 1) {
                                                                         echo "checked";
                                                                     } ?>>Female
 
@@ -77,62 +75,56 @@ $docInfo = $_SESSION["docInfo"];
             </div>
 
             <div class="row justify-content-center ">
-            <div class="mb-3 col col-lg-3">
-                <label for="exampleFormControlInput1" class="form-label">Center</label>
-                <input type="text" name="center" class="form-control" value="<?php echo $docInfo[0]["center"] ?>" id="exampleFormControlInput1" placeholder="Center">
-            </div>
-            <div class="mb-3 col col-lg-3">
-                <label for="exampleFormControlInput1" class="form-label">Phone No.</label>
-                <input type="text" name="phNum" class="form-control" value="<?php echo $docInfo[0]["ph_num"] ?>" id="exampleFormControlInput1" placeholder="Phone number">
-            </div>
+                <div class="mb-3 col col-lg-3">
+                    <label for="exampleFormControlInput1" class="form-label">Center</label>
+                    <input type="text" name="center" class="form-control" value="<?php echo $docInfo[0]["center"] ?>" id="exampleFormControlInput1" placeholder="Center">
+                </div>
+                <div class="mb-3 col col-lg-3">
+                    <label for="exampleFormControlInput1" class="form-label">Phone No.</label>
+                    <input type="text" name="phNum" class="form-control" value="<?php echo $docInfo[0]["ph_num"] ?>" id="exampleFormControlInput1" placeholder="Phone number">
+                </div>
             </div>
 
 
 
-           <div class="row justify-content-center ">
-           <div class="mb-3 col col-lg-6">
-                <label for="exampleFormControlInput1" class="form-label">Duty Date</label>
-                <input disabled type="text" name="dutyDate" class="form-control" value="<?php echo $docInfo[0]["day"] ?>" id="exampleFormControlInput1" placeholder="Duty Date">
+            <div class="row justify-content-center ">
+                <div class="mb-3 col col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Duty Date</label>
+                    <input disabled type="text" name="dutyDate" class="form-control" value="<?php echo $docInfo[0]["day"] ?>" id="exampleFormControlInput1" placeholder="Duty Date">
+                </div>
             </div>
-           </div>
-
-           <div class="row justify-content-center">
-           <div class="mb-3 col col-lg-3">
-                <label for="exampleFormControlInput1" class="form-label">Start Time</label>
-                <input disabled type="text" name="stime" class="form-control" value="<?php echo $docInfo[0]["start_time"] ?>" id="exampleFormControlInput1" placeholder="Start time">
-            </div>
-            <div class="mb-3 col col-lg-3">
-                <label for="exampleFormControlInput1" class="form-label">End Time</label>
-                <input disabled type="text" name="etime" class="form-control" id="exampleFormControlInput1" value="<?php echo $docInfo[0]["end_time"] ?>" placeholder="End time">
-            </div>
-           </div>
-           
-            
-            <div class="row justify-content-center">
-            <div class="mb-3 col col-lg-3">
-                <input type="text" hidden name="id" class="form-control" value="<?php echo $docInfo[0]["doctor_id"] ?>">
-            </div>
-            </div>
-          
 
             <div class="row justify-content-center">
-            <div class="mb-3 col col-lg-2">
-                <button type="button submit" name="updateDoctor" class="btn submit-button  ">UPDATE Doctor Info</button>
-            </div>
+                <div class="mb-3 col col-lg-3">
+                    <label for="exampleFormControlInput1" class="form-label">Start Time</label>
+                    <input disabled type="text" name="stime" class="form-control" value="<?php echo $docInfo[0]["start_time"] ?>" id="exampleFormControlInput1" placeholder="Start time">
+                </div>
+                <div class="mb-3 col col-lg-3">
+                    <label for="exampleFormControlInput1" class="form-label">End Time</label>
+                    <input disabled type="text" name="etime" class="form-control" id="exampleFormControlInput1" value="<?php echo $docInfo[0]["end_time"] ?>" placeholder="End time">
+                </div>
             </div>
 
-           
+
+            <div class="row justify-content-center">
+                <div class="mb-3 col col-lg-3">
+                    <input type="text" hidden name="id" class="form-control" value="<?php echo $docInfo[0]["doctor_id"] ?>">
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="mb-3 col col-lg-2">
+                    <button type="button submit" name="updateDoctor" class="btn submit-button  ">UPDATE Doctor Info</button>
+                </div>
+            </div>
+
+
 
 
 
         </form>
     </div>
-    </div>
-
-    </div>
-
-
-
 
 </body>
 

@@ -8,12 +8,12 @@ if (isset($_GET["id"])) {
     $docId = $_GET["id"];
     // $sql = $pdo->prepare("SELECT * FROM doctor_lists WHERE doctor_id=:id");
 
-    $sql=$pdo->prepare("
+    $sql = $pdo->prepare("
     SELECT * FROM doctor_lists
     INNER JOIN  doctor_dutytime_lists
     ON doctor_lists.doctor_id=doctor_dutytime_lists.doc_id WHERE doctor_id=:id;
     ");
-    
+
     $sql->bindValue(":id", $docId);
     $sql->execute();
 
@@ -21,9 +21,9 @@ if (isset($_GET["id"])) {
     echo "<pre>";
     print_r($result);
     //  $_SESSION["docInfo"] docInfo is naming to assign $result val
-    $_SESSION["docInfo"]=$result;
+    $_SESSION["docInfo"] = $result;
 
-  
+
 
     header("Location: ../../View/doctor/edit.php");
 }
