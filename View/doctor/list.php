@@ -97,7 +97,8 @@ include "../../Controller/doctor/listController.php";
 
 
             <div class="col col-md-auto col-lg-11 col-sm-6">
-                <a href="./add.php"> <input class="btn m-3 mybtn  float-lg-end float-sm-end float-md-end" type="submit" value="ADD Doctor"></a>
+                <a href="./add.php"> <input class="btn m-3 mybtn 
+                float-lg-end float-sm-end float-md-end" type="submit" value="ADD Doctor"></a>
 
 
                 <table class="table table align-middle table-bordered text-center ">

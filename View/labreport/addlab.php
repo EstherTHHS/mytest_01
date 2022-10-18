@@ -140,13 +140,13 @@
 
             <div class="row  justify-content-center">
 
-                <div class="mb-2 col col col-lg-3">
+                <div class="mb-4 col col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Result Date</label>
                     <input type="date" name="resdate" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
 
                 <div class="mt-4 col col col-lg-3">
-                    <input type="reset" class="btn submit-button col btn-secondary " value="Reset">
+                    <input type="reset" class="btn mb-1 submit-button col btn-secondary " value="Reset">
                     <button class="btn submit-button col btn-secondary " type="submit" name="addLabReport">Submit</button>
                 </div>
 

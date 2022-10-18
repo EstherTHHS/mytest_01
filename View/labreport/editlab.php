@@ -2,8 +2,8 @@
 // echo "ok";
 session_start();
 $labinfo =  $_SESSION["pLabInfo"];
-echo "<pre>";
-print_r($labinfo);
+// echo "<pre>";
+// print_r($labinfo);
 
 ?>
 
@@ -15,11 +15,22 @@ print_r($labinfo);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Lab </title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+    <link rel="stylesheet" href="../css/labAdd.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <form action="../../Controller/labreport/updateController.php" method="post">
+        <form action="../../Controller/labreport/update_labController.php" method="post">
             <div class="row justify-content-center ">
                 <div class="col col-lg-auto ">
                     <h3 class="m-5">Edit Lab Info</h3>
@@ -40,18 +51,18 @@ print_r($labinfo);
             <div class="row justify-content-center ">
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Ref Doc</label>
-                    <input type="text" name="refdoc" class="form-control" value="<?php echo $labinfo[0]["ref_doc"] ?>" id="exampleFormControlInput1" placeholder="SAMA">
+                    <input type="text" name="refdoc" class="form-control" value="<?php echo $labinfo[0]["ref_doc"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">ResultDate</label>
-                    <input type="date" name="bachelar" class="form-control" value="<?php echo $labinfo[0]["result_date"] ?>" id="exampleFormControlInput1" placeholder="Bachelar">
+                    <input type="date" name="resDate" class="form-control" value="<?php echo $labinfo[0]["result_date"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
             </div>
 
             <div class="row justify-content-center ">
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Test</label>
-                    <input type="text" name="test" class="form-control" value="<?php echo $labinfo[0]["test"] ?>" id="exampleFormControlInput1" placeholder="Center">
+                    <input type="text" name="test" class="form-control" value="<?php echo $labinfo[0]["test"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Result</label>
@@ -62,7 +73,7 @@ print_r($labinfo);
             <div class="row justify-content-center ">
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Unit</label>
-                    <input type="text" name="unit" class="form-control" value="<?php echo $labinfo[0]["unit"] ?>" id="exampleFormControlInput1" placeholder="unit">
+                    <input type="text" name="unit" class="form-control" value="<?php echo $labinfo[0]["unit"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Remark</label>
@@ -84,17 +95,17 @@ print_r($labinfo);
             <div class="row justify-content-center ">
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Ref Rate</label>
-                    <input disabled type="text" name="rate" class="form-control" value="<?php echo $labinfo[0]["ref_rate"] ?>" id="exampleFormControlInput1" placeholder="">
+                    <input type="text" name="rfrate" class="form-control" value="<?php echo $labinfo[0]["ref_rate"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">ID</label>
-                    <input type="text" name="upid" class="form-control" value="<?php echo $labinfo[0]["id"] ?>" id="exampleFormControlInput1" placeholder="Phone number">
+                    <input type="text" name="upid" class="form-control" value="<?php echo $labinfo[0]["id"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="mb-3 col col-lg-2">
-                    <button type="button submit" name="updateDoctor" class="btn submit-button  ">UPDATE Doctor Info</button>
+                    <button type="button submit" name="updateLab" class="btn btn-secondary">UPDATE Doctor Info</button>
                 </div>
             </div>
         </form>

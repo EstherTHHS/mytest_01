@@ -1,5 +1,5 @@
 <?php
-echo "OK";
+// echo "OK";
 
 include "../../Model/dbConnection.php";
 

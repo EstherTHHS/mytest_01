@@ -90,18 +90,18 @@ $docInfo = $_SESSION["docInfo"];
             <div class="row justify-content-center ">
                 <div class="mb-3 col col-lg-6">
                     <label for="exampleFormControlInput1" class="form-label">Duty Date</label>
-                    <input disabled type="text" name="dutyDate" class="form-control" value="<?php echo $docInfo[0]["day"] ?>" id="exampleFormControlInput1" placeholder="Duty Date">
+                    <input type="text" name="dutyDate" class="form-control" value="<?php echo $docInfo[0]["day"] ?>" id="exampleFormControlInput1" placeholder="Duty Date">
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">Start Time</label>
-                    <input disabled type="text" name="stime" class="form-control" value="<?php echo $docInfo[0]["start_time"] ?>" id="exampleFormControlInput1" placeholder="Start time">
+                    <input type="text" name="stime" class="form-control" value="<?php echo $docInfo[0]["start_time"] ?>" id="exampleFormControlInput1" placeholder="Start time">
                 </div>
                 <div class="mb-3 col col-lg-3">
                     <label for="exampleFormControlInput1" class="form-label">End Time</label>
-                    <input disabled type="text" name="etime" class="form-control" id="exampleFormControlInput1" value="<?php echo $docInfo[0]["end_time"] ?>" placeholder="End time">
+                    <input type="text" name="etime" class="form-control" id="exampleFormControlInput1" value="<?php echo $docInfo[0]["end_time"] ?>" placeholder="End time">
                 </div>
             </div>
 
