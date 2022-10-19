@@ -17,21 +17,21 @@ if (isset($_POST["updateLab"])) {
     $rfrate = $_POST["rfrate"];
     $upid = $_POST["upid"];
 
-    $sql = $pdo->prepare("
-    UPDATE lab_reports SET 
-    patient_id=:pid,
-    ref_doc=:refdoc,
-    result_date=:resdate,
-    test=:test,
-    result=:res,
-    ref_rate=:refrate,
-    unit=:unit,
-    remark=:remark,
-    reported_by=:repo,
-    authorised_by=:autho,
-    updated_date=:updateDate
-    WHERE id=:id;
-    ");
+    $sql = $pdo->prepare(
+        "UPDATE lab_reports SET 
+        patient_id=:pid,
+        ref_doc=:refdoc,
+        result_date=:resdate,
+        test=:test,
+        result=:res,
+        ref_rate=:refrate,
+        unit=:unit,
+        remark=:remark,
+        reported_by=:repo,
+        authorised_by=:autho,
+        updated_date=:updateDate
+        WHERE id=:id"
+    );
 
     $sql->bindValue(":pid", $pid);
     $sql->bindValue(":refdoc", $refdoc);
@@ -50,5 +50,5 @@ if (isset($_POST["updateLab"])) {
 
     header("Location: ../../View/labreport/labList.php");
 } else {
-    echo "ERR";
+    echo "Error";
 }

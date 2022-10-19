@@ -1,7 +1,12 @@
 <?php
 session_start();
 
-$docInfo = $_SESSION["docInfo"];
+if (isset($_SESSION["docInfo"])) {
+    $docInfo = $_SESSION["docInfo"];
+} else {
+    header("Location: ./list.php");
+}
+echo $docInfo;
 
 ?>
 <!DOCTYPE html>

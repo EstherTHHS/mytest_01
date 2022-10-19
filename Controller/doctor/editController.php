@@ -26,4 +26,6 @@ if (isset($_GET["id"])) {
 
 
     header("Location: ../../View/doctor/edit.php");
+} else {
+    header("Location: ../../View/doctor/list.php");
 }

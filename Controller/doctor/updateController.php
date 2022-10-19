@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include "../../Model/dbConnection.php";
 
 if (isset($_POST["updateDoctor"])) {

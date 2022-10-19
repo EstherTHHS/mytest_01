@@ -40,9 +40,9 @@ $labinfo =  $_SESSION["pLabInfo"];
 
             <div class="row justify-content-center ">
                 <div class="mb-3 col col-lg-3">
-                    <label for="exampleFormControlInput1" class="form-label">PatientID</label>
+                    <label for="exampleFormControlInput1" value="<?php echo $labinfo[0]["patient_id"] ?>" class="form-label">PatientID</label>
 
-                    <input type="text" name="pid" class="form-control" id="exampleFormControlInput1" placeholder="" required value="<?php echo $labinfo[0]["patient_id"] ?>">
+                    <input type="text" name="pid" class="form-control" id="exampleFormControlInput1" placeholder="" disabled value="<?php echo $labinfo[0]["patient_id"] ?>">
 
                 </div>
             </div>
@@ -97,15 +97,19 @@ $labinfo =  $_SESSION["pLabInfo"];
                     <label for="exampleFormControlInput1" class="form-label">Ref Rate</label>
                     <input type="text" name="rfrate" class="form-control" value="<?php echo $labinfo[0]["ref_rate"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
+
                 <div class="mb-3 col col-lg-3">
-                    <label for="exampleFormControlInput1" class="form-label">ID</label>
-                    <input type="text" name="upid" class="form-control" value="<?php echo $labinfo[0]["id"] ?>" id="exampleFormControlInput1" placeholder="">
+                    <button type="button submit" name="updateLab" class="btn btn-secondary mt-4">UPDATE Doctor Info</button>
                 </div>
+
             </div>
 
             <div class="row justify-content-center">
-                <div class="mb-3 col col-lg-2">
-                    <button type="button submit" name="updateLab" class="btn btn-secondary">UPDATE Doctor Info</button>
+
+
+                <div class="mb-3 col col-lg-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">ID</label> -->
+                    <input type="text" hidden name="upid" class="form-control" value="<?php echo $labinfo[0]["id"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
             </div>
         </form>

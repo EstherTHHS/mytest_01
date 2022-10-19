@@ -6,6 +6,7 @@ include "../../Model/dbConnection.php";
 
 if (isset($_GET["id"])) {
     $patientId = $_GET["id"];
+    echo "id";
     $sql = $pdo->prepare("SELECT * FROM lab_reports WHERE id=:labid");
 
     $sql->bindValue(":labid", $patientId);
@@ -20,4 +21,6 @@ if (isset($_GET["id"])) {
 
 
     header("Location: ../../View/labreport/editlab.php");
+} else {
+    header("Location: ../../View/labreport/labList.php");
 }
