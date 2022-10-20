@@ -146,7 +146,8 @@
                 </div>
 
                 <div class="mt-4 col col col-lg-3">
-                    <input type="reset" class="btn mb-1 submit-button col btn-secondary " value="Reset">
+                    <!-- <input type="reset" class="btn mb-1 submit-button col btn-secondary " value="reset"> -->
+                    <input type="button" value="Refresh Button" onClick="window.location.reload()">
                     <button class="btn submit-button col btn-secondary " type="submit" name="addLabReport">Submit</button>
                 </div>
 

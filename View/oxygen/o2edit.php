@@ -28,7 +28,7 @@ $o2infos = $_SESSION["oxygenInfo"];
 
             <div class="row justify-content-center  ">
                 <div class="col col-lg-auto ">
-                    <h3 class="m-5">Add Oxygen</h3>
+                    <h3 class="m-5">EDIT Oxygen</h3>
                 </div>
 
             </div>
@@ -56,7 +56,7 @@ $o2infos = $_SESSION["oxygenInfo"];
             <div class="row justify-content-center">
                 <div class="col-4 mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                    <input type="text" name="ophnum" value="<?php echo $o2infos[0]["ph_num"] ?>" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input type="text" name="onum" value="<?php echo $o2infos[0]["ph_num"] ?>" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="col-4 mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Available Type</label>
@@ -76,7 +76,7 @@ $o2infos = $_SESSION["oxygenInfo"];
 
                 </div>
                 <div class="col-4">
-                    <input type="text" hidden name="upid" value="<?php echo $o2infos[0]["id"] ?>" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input type="text" name="upid" value="<?php echo $o2infos[0]["id"] ?>" class="form-control" id="exampleFormControlInput1" placeholder="">
 
                 </div>
 

@@ -20,7 +20,7 @@ include "../../Controller/oxygen/o2listController.php";
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="../css/labAdd.css"> -->
+    <link rel="stylesheet" href="../css/labAdd.css">
 </head>
 
 <body class="d-flex justify-content-center align-items-center flex-column">

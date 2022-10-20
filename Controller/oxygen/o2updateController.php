@@ -8,7 +8,7 @@ include "../../Model/dbConnection.php";
 if (isset($_POST["editOxygen"])) {
     $oname = $_POST["oname"];
     $odate = $_POST["odate"];
-    $ophnum = $_POST["ophnum"];
+    $onum = $_POST["onum"];
 
     $otype = $_POST["otype"];
     $oaddre = $_POST["oaddre"];
@@ -29,7 +29,7 @@ if (isset($_POST["editOxygen"])) {
 
     $sql->bindValue(":name", $oname);
     $sql->bindValue(":date", $odate);
-    $sql->bindValue(":phnum", $ophnum);
+    $sql->bindValue(":phnum", $onum);
     $sql->bindValue(":addre", $oaddre);
     $sql->bindValue(":tos", $otype);
     $sql->bindValue(":updateDate", date("Y/m/d"));
@@ -37,7 +37,7 @@ if (isset($_POST["editOxygen"])) {
 
     $sql->execute();
 
-    header("Location: ../../View/o2list.php");
+    header("Location: ../../View/oxygen/o2list.php");
 } else {
     echo "ERR";
 }

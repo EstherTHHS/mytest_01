@@ -1,6 +1,7 @@
 <?php
 // echo "OK";
 include "../../Controller/labreport/list_labController.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@ include "../../Controller/labreport/list_labController.php";
 
 <body>
 
-    <a href="./addlab.php"><button type="button" class="btn btn-outline-success  m-5 float-lg-end float-sm-end float-md-end" data-mdb-ripple-color="dark">Add LabInfo</button></a>
+    <a href="./addlab.php"><button type="button" class="btn btn-outline-success  m-5 float-lg-end float-sm-end float-md-end" data-mdb-ripple-color="dark">Lab Infos</button></a>
 
     <table class="table">
         <thead>
