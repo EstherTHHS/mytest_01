@@ -1,6 +1,6 @@
 <?php
 echo "OK";
-
+session_start();
 include "../../Model/dbConnection.php";
 
 if (isset($_POST["updateDiseAndmedi"])) {
