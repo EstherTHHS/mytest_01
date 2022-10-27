@@ -16,5 +16,5 @@ $sql->execute();
 
 
 $patientLists = $sql->fetchAll(PDO::FETCH_ASSOC);
-echo "<pre>";
-print_r($patientLists);
+// echo "<pre>";
+// print_r($patientLists);

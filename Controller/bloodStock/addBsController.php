@@ -4,12 +4,13 @@ include "../../Model/dbConnection.php";
 
 
 if (isset($_POST["addBstock"])) {
-    $inB = $_POST["inB"];
+    $inB = $_POST["psB"] - $_POST["udB"];
     $bloodtypes = $_POST["bloodtypes"];
     $psB = $_POST["psB"];
     $udB = $_POST["udB"];
     $avg = $_POST["avg"];
     $bdate = $_POST["bdate"];
+    // $psB - $udB
 
 
     $sql = $pdo->prepare("

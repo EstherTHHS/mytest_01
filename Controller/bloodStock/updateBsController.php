@@ -7,7 +7,7 @@ include "../../Model/dbConnection.php";
 
 if (isset($_POST["updateBstock"])) {
     $upbdate = $_POST["upbdate"];
-    $upBinstock = $_POST["upBinstock"];
+    $upBinstock =  $_POST["upPre"] - $_POST["upUsed"];
     $upbloodtypes = $_POST["upbloodtypes"];
 
     $upPre = $_POST["upPre"];

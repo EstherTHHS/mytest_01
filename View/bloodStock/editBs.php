@@ -41,7 +41,7 @@ print_r($typeStock);
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
                     <label for="exampleFormControlInput1" class="form-label">Instock Now</label>
-                    <input id="" type="text" name="upBinstock" value="<?php echo $typeStock[0]["instock_now"] ?>" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input id="" readonly type="text" name="upBinstock" value="<?php echo $typeStock[0]["instock_now"] ?>" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
@@ -77,7 +77,7 @@ print_r($typeStock);
 
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
-                    <label for="exampleFormControlInput1" class="form-label">Previous Stock</label>
+                    <label for="exampleFormControlInput1" class="form-label">Today Stock</label>
                     <input id="" type="text" name="upPre" class="form-control" value="<?php echo $typeStock[0]["previous_stock"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
 
@@ -93,7 +93,7 @@ print_r($typeStock);
                 </div>
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
-                    <input id="" type="text" name="upId" class="form-control" value="<?php echo $typeStock[0]["id"] ?>" id="exampleFormControlInput1" placeholder="">
+                    <input id="" type="text" readonly name="upId" class="form-control" value="<?php echo $typeStock[0]["id"] ?>" id="exampleFormControlInput1" placeholder="">
                 </div>
 
                 <div class="col-lg-5 col-sm-3 align-self-end">

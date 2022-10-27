@@ -30,8 +30,8 @@ include "../../Controller/phistory/phlistController.php"
 
 
 
-        <table class="table mt-5 align-middle table-bordered  justify-content-center  table-striped">
-            <thead>
+        <table class="table  mt-5 align-middle table-bordered  justify-content-center ">
+            <thead class="text-center">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Date</th>

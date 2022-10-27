@@ -40,9 +40,9 @@
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
 
-                    <label for="exampleFormControlInput1" class="form-label">Instock Now</label>
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Instock Now</label> -->
 
-                    <input id="" type="text" name="inB" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input id="" hidden type="text" name="inB" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
 
 
@@ -71,7 +71,7 @@
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
 
-                    <label for="exampleFormControlInput1" class="form-label">Previous Stock</label>
+                    <label for="exampleFormControlInput1" class="form-label">Today Stock</label>
 
                     <input id="" type="text" name="psB" class="form-control" id="exampleFormControlInput1" placeholder="">
 
@@ -90,7 +90,7 @@
 
                 <div class="col-lg-5 col-sm-3 mb-3 ">
 
-                    <label for="exampleFormControlInput1" class="form-label">Average </label>
+                    <label for="exampleFormControlInput1" class="form-label">Minimum Stock Limit </label>
 
                     <input id="" type="text" name="avg" class="form-control" id="exampleFormControlInput1" placeholder="">
 
