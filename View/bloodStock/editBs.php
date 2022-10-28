@@ -1,8 +1,8 @@
 <?php
 session_start();
 $typeStock = $_SESSION["bloodInfos"];
-echo "<pre>";
-print_r($typeStock);
+// echo "<pre>";
+// print_r($typeStock);
 ?>
 
 <!DOCTYPE html>

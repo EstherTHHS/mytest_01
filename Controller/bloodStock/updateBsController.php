@@ -39,8 +39,11 @@ if (isset($_POST["updateBstock"])) {
     $sql->bindValue(":id", $upId);
 
     $sql->execute();
-
-    header("Location: ../../View/bloodStock/listBs.php");
+    if ($upBinstock >= 0) {
+        header("Location: ../../View/bloodStock/listBs.php");
+    } else {
+        header("Location: ../../View/bloodStock/editBs.php");
+    }
 } else {
     echo "ERR";
 }
